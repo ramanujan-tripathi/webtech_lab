@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<style>
+#myDIV {
+  border: 1px solid black;
+  padding: 16px;
+}
+</style>
+
+<body>
+
+<div id="myDIV">
+  <h3>A h3 element in div.</h3>
+  <p>P element in div.</p>
+  <span>A span element in div.</span>
+  <h2>A h2 element in div.</h2>
+  <div>A div element in div.</div>
+  <p>Another p element in div.</p>
+</div>
+
+<p>Click the button to add a background color to the fourth element inside the div element.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  const div = document.getElementById("myDIV");
+  div.getElementsByTagName("*")[3].style.backgroundColor = "red";
+}
+</script>
+
+</body>
+</html>

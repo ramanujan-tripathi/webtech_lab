@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="notification">Notification 1</div>
+    <div class="notification">Notification 2</div>
+    <br><button onclick="changeNotif()">Hide Notification</button>
+    <script>
+        function changeNotif(){
+            let notifications = document.getElementsByClassName('notification');
+            notifications[0].style.display = 'none';
+
+        }
+    </script>
+
+</body>
+</html>

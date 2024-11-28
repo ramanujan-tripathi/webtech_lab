@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="errorMessage">Old Error Message</p>
+    <br><button onclick="changeError()">New Error</button>
+    <script>
+        function changeError(){
+            let errorMessage = document.getElementById('errorMessage');
+            errorMessage.textContent = 'Invalid username or password';
+            errorMessage.style.color = 'red';
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div class="example">
+A div element with class="example"
+</div>
+
+<div class="example">
+A div element with class="example"
+</div>
+
+<p class="example">A p element with class="example"</p>
+
+<p>How many elements with class "example" in this document:</p>
+
+<p id="demo"></p>
+
+<script>
+const nodeList = document.querySelectorAll(".example");
+document.getElementById("demo").innerHTML = nodeList.length;
+</script>
+
+</body>
+</html>

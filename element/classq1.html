@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class="highlight">Item 1</li>
+        <li class="highlight">Item 2</li>
+        <li>Item 3</li>
+        <li class="highlight">Item 4</li>
+      </ul>
+      <br><button onclick="change()">Count Highlight</button> 
+      <script>
+        function change(){
+            let highlights = document.getElementsByClassName('highlight');
+            document.write(highlights.length);
+
+        }
+      </script>     
+</body>
+</html>

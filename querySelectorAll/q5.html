@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<style>
+a[target] {background-color: yellow}
+</style>
+
+<body>
+
+<p>The CSS selector a[target] gives links with a target a yellow background.</p>
+
+<p>Add a red border to all links with a target attribute.</p>
+<a href="https://www.w3schools.com">w3schools.com</a>
+<a href="http://www.disney.com" target="_blank">disney.com</a>
+<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+
+<script>
+const nodeList = document.querySelectorAll("a[target]");
+for (let i = 0; i < nodeList.length; i++) {
+  nodeList[i].style.border = "10px solid red";
+}
+</script>
+
+</body>
+</html>
+
+

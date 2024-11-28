@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="description">Paragraph 1</p>
+    <p class="description">Paragraph 2</p>
+    <p class="description">Paragraph 3</p>
+    <br><button onclick="changeColor()">Change Color</button>
+    <script>
+        function changeColor(){
+            let paragraphs = document.getElementsByClassName('description');
+            for (let paragraph of paragraphs) {
+                paragraph.style.color = 'blue';
+            }
+        }
+
+    </script>
+</body>
+</html>
